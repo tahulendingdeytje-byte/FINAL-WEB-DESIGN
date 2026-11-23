@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="theme-color" content="#10091f">
+        <title>Kontak — Shailenth</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body data-page="contact">
+        <div class="welcome-screen" id="welcomeScreen">
+            <div class="welcome-inner">
+                <div class="welcome-mark"><img class="welcome-photo" id="welcomePhoto" src="" alt="Foto profil"><i class="bi bi-stars" id="welcomePlaceholder"></i></div>
+                <div class="eyebrow mb-3">personal portfolio</div>
+                <h1 class="welcome-title gradient-text">Welcome</h1>
+                <p class="welcome-sub">Sebuah ruang kecil untuk cerita, karya, dan perjalanan.</p>
+                <button class="btn btn-violet" id="welcomeButton">Masuk ke portofolio <i class="bi bi-arrow-up-right ms-2"></i></button>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Shailenth<span class="brand-dot">.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Buka menu"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                        <a class="nav-link" href="tentang.html">Tentang</a>
+                        <a class="nav-link" href="karya.html">Karya</a>
+                        <a class="nav-link" href="perjalanan.html">Perjalanan</a>
+                        <a class="nav-link active" href="kontak.html">Kontak</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="page-wrap">
+            <header class="page-heading">
+                <div class="container container-narrow">
+                    <div class="eyebrow mb-3">pintu untuk cerita baru</div>
+                    <h1 class="section-title">Mari <span class="gradient-text">terhubung.</span></h1>
+                    <p class="lead-copy mt-3">Punya ide, proyek, atau sekadar ingin menyapa? Saya akan senang mendengar dari Anda.</p>
+                </div>
+            </header>
+            <section class="pb-5">
+                <div class="container container-narrow">
+                    <div class="row g-4">
+                        <div class="col-lg-5 reveal">
+                            <div class="glass p-4 p-md-5 h-100">
+                                <div class="eyebrow mb-2">kontak langsung</div>
+                                <h2 class="h3 mb-4">Obrolan dimulai dari sini.</h2>
+                                <div class="d-grid gap-3">
+                                    <a class="glass contact-link" id="emailLink" href="#"><span class="icon-bubble"><i class="bi bi-envelope"></i></span><span><small class="muted d-block">Email</small><strong data-profile="email">emailanda@example.com</strong></span><i class="bi bi-arrow-up-right ms-auto muted"></i></a>
+                                    <div class="glass contact-link"><span class="icon-bubble"><i class="bi bi-geo-alt"></i></span><span><small class="muted d-block">Lokasi</small><strong data-profile="location">Lokasi Anda</strong></span></div>
+                                </div>
+                                <div class="mt-4 pt-3 border-top" style="border-color:var(--line)!important">
+                                    <label for="profileEmail" class="form-label">Email Anda</label>
+                                    <div class="input-group">
+                                        <input id="profileEmail" type="email" class="form-control" placeholder="nama@email.com">
+                                        <button class="btn btn-outline-light" id="saveEmail" type="button">Simpan</button>
+                                    </div>
+                                    <div class="small muted mt-2">Alamat email ini dipakai pada tombol kontak.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 reveal">
+                            <form class="glass p-4 p-md-5" id="contactForm">
+                                <div class="eyebrow mb-2">kirim pesan</div>
+                                <h2 class="h3 mb-4">Apa yang ada di pikiran Anda?</h2>
+                                <div class="mb-3">
+                                    <label class="form-label" for="senderName">Nama</label>
+                                    <input class="form-control" id="senderName" placeholder="Nama Anda" required maxlength="80">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="senderEmail">Email</label>
+                                    <input class="form-control" id="senderEmail" type="email" placeholder="nama@email.com" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label" for="message">Pesan</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Tulis pesan Anda di sini..." required maxlength="1500"></textarea>
+                                </div>
+                                <button class="btn btn-violet" type="submit">Buka aplikasi email <i class="bi bi-send ms-2"></i></button>
+                                <p class="small muted mt-3 mb-0">Tombol ini membuka aplikasi email di perangkat Anda dengan pesan yang sudah disiapkan.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container d-flex flex-wrap justify-content-between gap-2"><span>© <span data-year></span> <span data-profile="name">Nama Anda</span>. Dibuat dengan hati.</span><span>Ruang kreatif personal <i class="bi bi-heart-fill ms-1" style="color:#d8b4fe"></i></span></div>
+        </footer>
+        <div class="toast-note" id="toastNote"></div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script><script src="app.js"></script>
+    </body>
+</html>
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Karya — Shailenth</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body data-page="work">
+        <div class="welcome-screen" id="welcomeScreen">
+            <div class="welcome-inner">
+                <div class="welcome-mark"><i class="bi bi-stars"></i></div>
+                <div class="eyebrow mb-3">personal portfolio</div>
+                <h1 class="welcome-title gradient-text">Welcome</h1>
+                <p class="welcome-sub">Sebuah ruang kecil untuk cerita, karya, dan perjalanan.</p>
+                <button class="btn btn-violet" id="welcomeButton">Masuk ke portofolio <i class="bi bi-arrow-up-right ms-2"></i></button>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Shailenth<span class="brand-dot">.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Buka menu"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                        <a class="nav-link" href="tentang.html">Tentang</a>
+                        <a class="nav-link active" href="karya.html">Karya</a>
+                        <a class="nav-link" href="perjalanan.html">Perjalanan</a>
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="page-wrap">
+            <header class="page-heading">
+                <div class="container container-narrow">
+                    <div class="eyebrow mb-3">Proses saya berkembang</div>
+                    <h1 class="section-title">Karya yang <span class="gradient-text">Saya buat.</span></h1>
+                </div>
+            </header>
+            <section class="pb-5">
+                <div class="container container-narrow">
+                    <form id="projectForm" class="glass p-4 p-md-5 mb-5 reveal">
+                        <div class="row align-items-end g-3">
+                            <div class="col-lg-4">
+                                <label class="form-label" for="projectTitle">Nama karya</label>
+                                <input class="form-control" id="projectTitle" placeholder="Contoh: Identitas visual" maxlength="80" required>
+                            </div>
+                            <div class="col-lg-4">
+                                <label class="form-label" for="projectDescription">Cerita singkat</label>
+                                <input class="form-control" id="projectDescription" placeholder="Ceritakan tentang karya ini" maxlength="160">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="form-label" for="projectImage">Foto karya</label>
+                                <input class="form-control" id="projectImage" type="file" accept="image/*" required>
+                            </div>
+                            <div class="col-lg-1 d-grid">
+                                <button class="btn btn-violet px-3" type="submit" aria-label="Tambah karya"><i class="bi bi-plus-lg"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="row g-4" id="projectGrid"></div>
+                    <div class="empty-hint mt-4" id="emptyProjects"><i class="bi bi-images fs-2 d-block mb-2"></i>Galeri Anda masih kosong. Tambahkan foto karya pertama di atas.</div>
+                    <p class="small muted mt-4">Foto karya tersimpan di browser perangkat ini. Untuk publikasi online, hubungkan situs ini ke layanan hosting dan penyimpanan gambar.</p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container d-flex flex-wrap justify-content-between gap-2"><span>© <span data-year></span> <span data-profile="name">Nama Anda</span>. Dibuat dengan hati.</span><span>Ruang kreatif personal <i class="bi bi-heart-fill ms-1" style="color:#d8b4fe"></i></span></div>
+        </footer>
+        <div class="toast-note" id="toastNote"></div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script><script src="app.js"></script>
+    </body>
+</html>
+

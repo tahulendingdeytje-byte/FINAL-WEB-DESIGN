@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Perjalanan — Shailenth</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body data-page="journey">
+        <div class="welcome-screen" id="welcomeScreen">
+            <div class="welcome-inner">
+                <div class="welcome-mark"><i class="bi bi-stars"></i></div>
+                <div class="eyebrow mb-3">personal portfolio</div>
+                <h1 class="welcome-title gradient-text">Welcome</h1>
+                <p class="welcome-sub">Sebuah ruang kecil untuk cerita, karya, dan perjalanan.</p>
+                <button class="btn btn-violet" id="welcomeButton">Masuk ke portofolio <i class="bi bi-arrow-up-right ms-2"></i></button>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Shailenth<span class="brand-dot">.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Buka menu"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                        <a class="nav-link" href="tentang.html">Tentang</a>
+                        <a class="nav-link" href="karya.html">Karya</a>
+                        <a class="nav-link active" href="perjalanan.html">Perjalanan</a>
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="page-wrap">
+            <header class="page-heading">
+                <div class="container container-narrow">
+                    <div class="eyebrow mb-3">langkah demi langkah</div>
+                    <h1 class="section-title">Perjalanan <span class="gradient-text">yang membentuk.</span></h1>
+                    <p class="lead-copy mt-3">Setiap pengalaman meninggalkan sesuatu: pelajaran, perspektif, atau keberanian untuk mencoba lagi.</p>
+                </div>
+            </header>
+            <section class="pb-5">
+                <div class="container container-narrow">
+                    <div class="row g-4">
+                        <div class="col-lg-7 reveal">
+                            <div class="glass p-4 p-md-5">
+                                <div class="eyebrow mb-4">timeline</div>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <span class="eyebrow">sekarang</span>
+                                        <h2 class="h5 mt-2">Membuat sesuatu dengan tujuan</h2>
+                                        <p class="muted mb-0">Fokus pada ide, proyek, dan kolaborasi yang memberi dampak positif.</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <span class="eyebrow">fase eksplorasi</span>
+                                        <h2 class="h5 mt-2">Mencoba banyak kemungkinan</h2>
+                                        <p class="muted mb-0">Belajar dari praktik langsung, masukan, dan perspektif orang lain.</p>
+                                    </div>
+                                    <div class="timeline-item pb-0">
+                                        <span class="eyebrow">awal perjalanan</span>
+                                        <h2 class="h5 mt-2">Rasa ingin tahu menjadi titik mula</h2>
+                                        <p class="muted mb-0">Ketertarikan pada hal-hal kreatif tumbuh menjadi dorongan untuk terus berkarya.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 reveal">
+                            <div class="glass p-4 h-100 d-flex flex-column justify-content-between">
+                                <div>
+                                    <div class="icon-bubble mb-4"><i class="bi bi-compass"></i></div>
+                                    <div class="eyebrow mb-2">pegangan saya</div>
+                                    <h2 class="h3">Proses juga bagian dari karya.</h2>
+                                    <p class="muted mt-3">Tidak semua langkah harus sempurna. Yang penting tetap bergerak, tetap terbuka, dan memberi ruang untuk tumbuh.</p>
+                                </div>
+                                <a class="btn btn-outline-light align-self-start" href="kontak.html">Mari berkolaborasi <i class="bi bi-arrow-up-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container d-flex flex-wrap justify-content-between gap-2"><span>© <span data-year></span> <span data-profile="name">Nama Anda</span>. Dibuat dengan hati.</span><span>Ruang kreatif personal <i class="bi bi-heart-fill ms-1" style="color:#d8b4fe"></i></span></div>
+        </footer>
+        <div class="toast-note" id="toastNote"></div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script><script src="app.js"></script>
+    </body>
+</html>
+
