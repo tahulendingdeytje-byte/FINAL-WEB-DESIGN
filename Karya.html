@@ -42,28 +42,37 @@
             </header>
             <section class="pb-5">
                 <div class="container container-narrow">
-                    <form id="projectForm" class="glass p-4 p-md-5 mb-5 reveal">
-                        <div class="row align-items-end g-3">
-                            <div class="col-lg-4">
-                                <label class="form-label" for="projectTitle">Nama karya</label>
-                                <input class="form-control" id="projectTitle" placeholder="Contoh: Identitas visual" maxlength="80" required>
-                            </div>
-                            <div class="col-lg-4">
-                                <label class="form-label" for="projectDescription">Cerita singkat</label>
-                                <input class="form-control" id="projectDescription" placeholder="Ceritakan tentang karya ini" maxlength="160">
-                            </div>
-                            <div class="col-lg-3">
-                                <label class="form-label" for="projectImage">Foto karya</label>
-                                <input class="form-control" id="projectImage" type="file" accept="image/*" required>
-                            </div>
-                            <div class="col-lg-1 d-grid">
-                                <button class="btn btn-violet px-3" type="submit" aria-label="Tambah karya"><i class="bi bi-plus-lg"></i></button>
-                            </div>
+                    <p class="muted mb-4">Semua karya yang pernah saya buat.</p>
+                    <!-- Ganti judul di h2 dan keterangannya di p pada kartu yang ingin diedit. -->
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4 reveal">
+                            <article class="glass project-card h-100">
+                                <img class="project-image" src="images/karyawebapp.png" alt="Tampilan aplikasi GOR Smash" loading="lazy">
+                                <div class="project-content">
+                                    <h2 class="h5 mb-2">GOR-WEB SMASH</h2>
+                                    <p class="muted mb-0">Website GOR-Smash ,sistem app web pertama saya , yang saya buat sudah di lengkapi dengan backend fornend dan hoosting.</p>
+                                </div>
+                            </article>
                         </div>
-                    </form>
-                    <div class="row g-4" id="projectGrid"></div>
-                    <div class="empty-hint mt-4" id="emptyProjects"><i class="bi bi-images fs-2 d-block mb-2"></i>Galeri Anda masih kosong. Tambahkan foto karya pertama di atas.</div>
-                    <p class="small muted mt-4">Foto karya tersimpan di browser perangkat ini. Untuk publikasi online, hubungkan situs ini ke layanan hosting dan penyimpanan gambar.</p>
+                        <div class="col-md-6 col-lg-4 reveal">
+                            <article class="glass project-card h-100">
+                                <img class="project-image" src="images/karyaweb.png" alt="Tampilan website Taman Kelong" loading="lazy">
+                                <div class="project-content">
+                                    <h2 class="h5 mb-2">WEB PERTAMA</h2>
+                                    <p class="muted mb-0">Website yang mengenalkan Taman Kelong di Tomohon, Sulawesi Utara. web pertama yang saya buat dikelas web design untuk project mid</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-lg-4 reveal">
+                            <article class="glass project-card h-100">
+                                <img class="project-image" src="images/karya-foto.jpeg" alt="Foto karya pertama" loading="lazy">
+                                <div class="project-content">
+                                    <h2 class="h5 mb-2">FIRST FOTO</h2>
+                                    <p class="muted mb-0">selain di bidang teknologi saya juga tertarik dibeberapa bidang termasuk fotografi, dan ini foto pertama yang saya ambil dan saya edit. foto yang paling bermakna untuk saya.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
