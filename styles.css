@@ -584,6 +584,97 @@ a {
 .gallery-card:hover img {
     transform: scale(1.03);
 }
+
+/* Animasi kartu dokumentasi Klabat University dan SMA Moment */
+.documentation-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+}
+
+.documentation-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(115deg, transparent 35%, rgba(255, 255, 255, 0.16) 50%, transparent 65%);
+    transform: translateX(-130%);
+}
+
+.documentation-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(216, 180, 254, 0.55);
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.32), 0 0 24px rgba(216, 180, 254, 0.08);
+}
+
+.documentation-card:hover::after {
+    animation: documentation-shine .75s ease;
+}
+
+.documentation-card img {
+    height: 210px;
+    object-fit: cover;
+    transition: transform .45s cubic-bezier(.2, .75, .25, 1), filter .35s ease;
+}
+
+.documentation-card:hover img {
+    transform: scale(1.06);
+    filter: brightness(1.06) saturate(1.08);
+}
+
+.reveal.visible .documentation-card {
+    animation: documentation-enter .65s cubic-bezier(.2, .75, .25, 1) both;
+}
+
+.reveal.visible .row > [class*="col"]:nth-child(1) .documentation-card {
+    animation-delay: .08s;
+}
+
+.reveal.visible .row > [class*="col"]:nth-child(2) .documentation-card {
+    animation-delay: .18s;
+}
+
+.reveal.visible .row > [class*="col"]:nth-child(3) .documentation-card {
+    animation-delay: .28s;
+}
+
+@keyframes documentation-enter {
+    from {
+        opacity: 0;
+        transform: translateY(28px) scale(.96);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes documentation-shine {
+    from {
+        transform: translateX(-130%);
+    }
+    to {
+        transform: translateX(130%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .documentation-card,
+    .documentation-card img,
+    .reveal.visible .documentation-card {
+        transition: none;
+        animation: none;
+    }
+
+    .documentation-card:hover {
+        transform: none;
+    }
+
+    .documentation-card:hover img {
+        transform: none;
+    }
+}
 /* ===================================================
    STYLING KARTU PENDIDIKAN & PAS FOTO UTUH (3:4)
    =================================================== */
